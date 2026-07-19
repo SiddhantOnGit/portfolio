@@ -4,7 +4,7 @@
 body {
  background: #111a35;
     color: #e0e0e0; /* Light grey text for dark background */
-    font-family: 'Pixelify Sans', 'monospace';
+    font-family: 'monospace','Pixelify Sans';
 }
 
 .container {
