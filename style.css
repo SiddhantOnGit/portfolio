@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
- background: #111a35;
-    color: #e0e0e0; /* Light grey text for dark background */
-    font-family: 'monospace','Pixelify Sans';
+ background: #141413;
+    color: white; /* #e0e0e0; Light grey text for dark background */
+    font-family: 'Pixelify Sans', monospace;
 }
 
 .container {
@@ -18,16 +18,22 @@ body {
 
 .container h1 {
     font-size: 50px; 
+    color: lightgoldenrodyellow;
     margin:5px auto;
 }
 .container p{
     font-size: 20px;
     font-weight: 100;
+
 }
 .left-content{
     position: fixed;
     width:50%;
     height: 50%;
+}
+.bio span{
+    color: lightsalmon;
+    animation: 1s ease blink infinite;
 }
 .left-content .selfie img{
     width: 250px;
@@ -40,8 +46,11 @@ body {
     margin-left: 50%;
     width:50%;
     z-index: 1;
+    font-family: monospace;
 }
 .right-content h2{
+    font-family: 'Pixelify sans';
+    color: lightgoldenrodyellow;
     text-decoration-line: underline;
     text-underline-offset: 10px;
 }
@@ -49,18 +58,19 @@ body {
 .right-content p {
     font-size: large; /* Slightly larger font for readability */
     line-height: 1.6; /* Improve readability with increased line height */
-    color: #cccccc; /* A slightly lighter grey for the text */
+    color: white; /* A slightly lighter grey for the text */
 }
 .right-sections{
     width:100%;
     margin-bottom: 50px;
+
 }
 
 .right-sections ul {
     list-style: square;
     padding-left: 20px; 
     margin: 0; /* Remove default margin */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
 }
 
@@ -83,7 +93,7 @@ margin-bottom: 20px; /* Add space between list items */
     padding:15px;
     margin:10px auto;
     background: white;
-    color:#111a35;
+    color: #141413;
     font-size: large;
 }
 
@@ -103,7 +113,6 @@ margin-bottom: 20px; /* Add space between list items */
 }
 
 #status{
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color:darkgray;
 }
@@ -115,15 +124,21 @@ margin-bottom: 20px; /* Add space between list items */
     z-index: -1; /* Position behind other content */
 }
 .creds{
-    font-family: "Poppins";
     position: fixed;
     bottom: 20px;
 }
 strong{
-    color: white;
+    color: lightsalmon;
 }
 
-
+@keyframes blink {
+    0%{
+       opacity: 0; 
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width:1024px){
     .left-content{
